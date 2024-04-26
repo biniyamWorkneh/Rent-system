@@ -12,9 +12,10 @@ const Detail = () => {
      {product?(
     <div className="card" style={{float:"left", width:'25rem',margin:"10% 50% 5% 35%",
     height:"500px"}}>
-  <img src={`/${product.imageSrc}`} className="card-img-top" alt="..."/>
+  <img src={`/${product.imageSrc1}`} className="card-img-top" alt="..."/>
   <div className="card-body" style={{marginTop:"10px"}}>
-    <h5 className="card-title" style={{margin:"10px"}}>Price: {product.price} birr</h5>
+  {/* <img src={product.imageSrc2} alt="" style={{height:}} /> */}
+   <h5 className="card-title" style={{margin:"10px"}}>Price: {product.price} birr</h5>
     <h5 className="card-text" style={{margin:"10px"}}>Location: {product.location}</h5>
     <h5 className="card-text" style={{margin:"10px"}}>SpLocation: {product.specificLocation}</h5>
     <h5 className="card-text" style={{margin:"10px"}}>Rooms: {product.internalRooms}</h5>

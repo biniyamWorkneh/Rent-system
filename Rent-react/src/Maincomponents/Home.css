@@ -1,0 +1,15 @@
+.inlput{
+    display:flex;
+    width:100%;
+    justify-content:center;
+    align-items:center; 
+    margin:0 auto;
+    float:right;
+}.texto{
+    border-radius:30px; 
+    width:350px;
+    text-align:center;
+     height:50px;
+    margin-top:20px;
+     margin-right:506px;
+}

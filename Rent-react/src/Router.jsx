@@ -1,7 +1,8 @@
 import React from 'react'
 import {Routes, Route} from "react-router-dom"
-import Home from './Home'
+import Home from "../src/Maincomponents/Home"
 import Detail from './Detail'
+import Services from './Maincomponents/Services'
 
 const RouterPage = () => {
   return (
@@ -9,6 +10,7 @@ const RouterPage = () => {
         <Routes>
             <Route exact path="/" element ={<Home/>}/>
             <Route path = "/detail/:id" element={<Detail/>}/>
+            <Route path='/service' element={<Services/>}/>
         </Routes>
 
     </div>

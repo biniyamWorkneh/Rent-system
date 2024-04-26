@@ -1,18 +1,18 @@
 import React from 'react'
 import { useState } from 'react'
-import Sidebar from './Sidebar'
-import { products } from './data/data'
-import Cards from './Cards'
-
+import Sidebar from '../Sidebar'
+import { products } from '../data/data'
+import Cards from '../Cards'
+import './Home.css'
 
 const Home = () => {
  const [search, setSearch]= useState("")
  return(
   <div> 
-    <div className='inlput' style={{display:"flex",justifyContent:"center",alignItems:"center", margin:"0 auto", float:"right"}}>
-    <input type="text" placeholder='search here' onChange={(event)=>{
+    <div className='inlput'>
+    <input type="text" placeholder='search here' className='texto' onChange={(event)=>{
       setSearch(event.target.value)
-    }}  style={{borderRadius:"30px", width:"350px", textAlign:"center", height:"50px",marginTop:'20px', marginRight:"506px"}}/></div>
+    }}  /></div>
     {
       products.filter((val)=>{
         if(search ===""){
@@ -25,7 +25,7 @@ const Home = () => {
           <Cards
           key= {product.id}
           id = {product.id}
-          imageSrc={product.imageSrc}
+          imageSrc={product.imageSrc1}
           price={product.price}
           location={product.location}
           />)
